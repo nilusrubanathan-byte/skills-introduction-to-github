@@ -1,0 +1,92 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOnyh7hdrX/IXfgszHOKJEt",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/nilusrubanathan-byte/skills-introduction-to-github/blob/main/Salvation%20Army%20-%20GL%20analysis\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "_HtpnYBKeQ0U"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0b366908"
+      },
+      "source": [
+        "# Task\n",
+        "Analyze accounting GL transactions to detect anomalies or suspicious activity."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7c29b14a"
+      },
+      "source": [
+        "## Load data\n",
+        "\n",
+        "### Subtask:\n",
+        "Load the accounting GL transactions data from the provided source (e.g., CSV, database).\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "e4e1b75e"
+      },
+      "source": [
+        "**Reasoning**:\n",
+        "Load the accounting transactions data from the CSV file into a pandas DataFrame and display the first 5 rows and the DataFrame's information to understand its structure and content.\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "b11fa92f"
+      },
+      "source": [
+        "import pandas as pd\n",
+        "\n",
+        "# Load the dataset\n",
+        "df = pd.read_csv('accounting_transactions.csv')\n",
+        "\n",
+        "# Display the first 5 rows\n",
+        "display(df.head().to_markdown(index=False, numalign=\"left\", stralign=\"left\"))\n",
+        "\n",
+        "# Display the DataFrame information\n",
+        "display(df.info())"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
